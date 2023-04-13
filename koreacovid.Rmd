@@ -40,7 +40,12 @@ barchartGC(~result + Sex,data=kRdata, type = "percent")
 The models above provide a representation of the disease killing males and females. The order is formed from the percent of a frequency of males and females. Here the percent of people who are dying the most is the men group. This is why graphs between the men and women are not evenly distributed. 
 
 ## Numerical results
-
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The numerical results provide a further representation of the disease killing more males than females. This is way the results between men and women are not evenly distributed. The results say 56 females lived over 44 males in a 100 total sample and 36 females died and 64 males died in a 100 total sample.  
 
 ## Inferential results 
 

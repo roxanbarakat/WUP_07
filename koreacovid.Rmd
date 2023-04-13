@@ -48,9 +48,13 @@ colPerc(table1)
 The numerical results provide a further representation of the disease killing more males than females. This is way the results between men and women are not evenly distributed. The results say 56 females lived over 44 males in a 100 total sample and 36 females died and 64 males died in a 100 total sample.  
 
 ## Inferential results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
-
+The inferential result provides a representation that more men are dying in Korea because of COVID-19. The odds ration of these results is a representation of the likely hood of men dying from this disease. There is 2.3 chance of male dying over a female dying. This is why the notes that were taken from the outbreak of the disease are greater than what was hypothesized. 
 
 ## Conclusions
 
